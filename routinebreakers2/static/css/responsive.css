@@ -1,0 +1,470 @@
+@media (max-width: 1199.98px){
+	.flight_list_section .flight_details .block{
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 991.98px){
+	.travelers-section .t_box .t_active:hover{
+		box-shadow: 0px 2px 15px  rgba(0,0,0,0.8);
+	}
+	.membership_container .free .ttl{
+		margin-bottom: 0;
+	}
+	.flight_details .details .no-padding{
+		text-align: center;
+	    padding: 0 15px;
+	}
+	.flight_list_section .flight_details .details .departure .u-i, 
+	.flight_list_section .flight_details .details .return .u-i{
+		left: 20px;
+	}
+	.flight_details .details .return .plane-down{
+		left: 32px;
+	}
+	.flight_list_section .flight_details .details{
+		padding-left: 0;
+	}
+	.flight_list_section .flight_details ._ex{
+		justify-content: space-around;
+	}
+	.flight_list_section .flight_details .place_img{
+		height: 200px;
+	}
+	.log-section .log_box button{
+		width: 25%;
+		padding: 9px 6px;
+	}
+	.log-section .log_box input{
+		width: 50%;
+	}
+	.main_bg .slogan{
+		font-size: 36px;
+	}
+	.main_bg{
+		min-height: 400px;
+	}
+	h3.title,
+	.title{
+		font-size: 28px;
+	}
+	.partner-section .container >p, 
+	.flight-section .container > p{
+		font-size: 20px;
+	}
+	.partner-section .partner_box .partner img{
+		height: 60%;
+	}
+	.travelers-section .t_box .t_none{
+		display: none;
+	}
+	.travelers-section .t_box .t_active{
+	    position: static;
+    	margin: 50px auto 190px auto;
+	}
+	.travelers-section .t_box{
+		height: auto;
+	}
+	.travelers-section .t_box .user_comment.last,
+	.travelers-section .t_box .user_comment{
+		visibility: visible;
+		opacity: 1;
+		left: 50%;
+		top: 75px;
+		text-align: center;
+		transform: translateX(-50%);
+	}
+	.travelers-section .t_box .user_comment::before{
+		display: none;
+	}
+	._ex_padding{
+		padding-bottom: 0;
+	}
+	.partner-section.m_partners .partner_box{
+		padding: 0;
+	}
+}
+
+@media (max-width: 767.98px){
+	.upgrade-popup{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.user-section .left_side{
+		width: 100%;
+	}
+	.upgrade-popup .l .v{
+		left: 55px;
+	}
+	.upgrade-popup .v{
+		top: 31%;
+	}
+	.upgrade-popup ul li{
+		height: auto;
+		min-height: 40px;
+		margin-bottom: 5px;
+	}
+	.upgrade-popup p{
+		font-size: 14px;
+		line-height: unset;
+	}
+	.upgrade-popup .sight.r{
+		padding-left: 0;
+	}
+	.upgrade-popup li .gry{
+		font-size: 13px;
+		position: static;
+		display: block;
+		padding-left: 35px;
+	}
+	.upgrade-popup .tbody{
+	    max-width: 340px;
+	    margin: 20px auto;
+	}
+	.upgrade-popup .sight.l{
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #4e3990;
+	}
+	.upgrade-popup .thead{
+		margin: 0;
+	}
+	.upgrade-popup .bottom p{
+		padding-left: 0;
+	}
+	.upgrade-popup .sight{
+		width: 100%;
+	}
+	.upgrade-popup{
+		flex-direction: column;
+		position: static;
+		transform: none;
+		margin: 50px auto;
+	}
+	.upgrade-popup::after{
+		display: none;
+	}
+	.email-section .message._ex,
+	.email-section .message{
+		padding: 120px 15px;
+	    text-align: center;
+	    background-position: top center;
+	    background-size: 100px;
+	    margin: 90px auto;
+	}
+	.email-section form{
+		margin: 0 auto;
+	}
+	.email-section h2{
+		font-size: 35px;
+	}
+	.partners_list .list .off .mr-2,
+	.partners_list .list .partner_logo{
+		display: block;
+	}
+	.partners_list .list{
+		text-align: center;
+		padding: 20px;
+	}
+	.partners_list .list .dealBtn{
+		margin-bottom: 30px;
+		padding: 10px 30px;
+	}
+	.partners_list .illustration{
+		height: 120px;
+	}
+	.deal-container .gray_title h4{
+		font-size: 18px;
+	}
+	.staff_container .staff:nth-child(odd) .avatar{
+		float: left;
+	}
+	.staff_container .staff:nth-child(even) .avatar{
+		float: right;
+	}
+	.staff_container .staff .text{
+		position: relative;
+		transform: none;
+		top: unset;
+		max-width: 100%;
+		margin-top: 20px;
+	}
+	.partner-section .container >p, 
+	.flight-section .container > p{
+		font-size: 18px;
+	}
+	h3.title,
+	.title{
+		font-size: 22px;
+	}
+	.flight_list_section .flight_details .details .where_is{
+		max-width: unset;
+	}
+	.flight_list_section .flight_details .details .departure .u-i, 
+	.flight_list_section .flight_details .details .return .u-i{
+		left: 30px;
+	}
+	.flight_list_section .flight_box .to .circle{
+		display: none;
+	}
+	.flight_list_section .flight_box{
+		padding: 10px 20px;
+	}
+	.log-section .log_box button{
+		width: 35%;
+	}
+	.log-section .log_box input{
+		width: 50%;
+	}
+	.log-section .log_box .signIn,
+	.log-section .log_box h2{
+		font-size: 18px;
+	}
+	.log-section .log_box{
+		height: auto;
+	}
+	.log-section .log_box form{
+		margin: 20px 0;
+	}
+	.bott-slogan{
+		font-size: 30px;
+	}
+	.bott-section h3{
+		font-size: 25px;
+	}
+	.bott-section{
+		min-height: 330px;
+	}
+	.user-section .bg{
+		width: 100%;
+		opacity: .2;
+	}
+	.user-section .login_container{
+		padding: 20px 30px;
+	}
+	.user-section .login_container .logo img {
+	    width: 100px;
+	}
+	.user-section .login_container .logo h2{
+		font-size: 35px;
+	}
+	.user-section .login_container input{
+		box-shadow: 0px 3px 13px -4px rgba(0,0,0,0.5);
+		border-color: transparent;
+	}
+	.user-section .login_container h2{
+		font-size: 30px;
+	}
+	.partner-section.m_partners{
+		padding: 20px 0;
+	}
+	.partners_list .list .partner_logo img{
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 575.98px){
+	.unlockBtn,
+	.upgrade-popup .blBtn{
+		width: 60%;
+	}
+	.nav_bar .logo a{
+		background-position: 0px -73px;
+		width: 35px;
+	}
+	#footer .logo a{
+		background-position: -38px -73px;
+		width: 35px;
+	}
+	.nav_bar.c .logo a{
+		background-position-x: 0;
+	}
+	.email-section h2{
+		font-size: 25px;
+	}
+	.email-section .message._ex, .email-section .message{
+		background-size: 75px;
+		padding: 100px 15px;
+	}
+	.sort_container{
+		justify-content: space-between;
+	}
+	.sortBtn{
+		width: 48%;
+		max-width: 200px;
+		margin: 12px 0;
+	}
+	.sortBtn .detailed li, 
+	.sortBtn .sort_list li,
+	.sortBtn .sort_label{
+		padding-left: 10px;
+	}
+	.sortBtn .x{
+		right: 15px;
+		transform: translateY(-50%) rotate(0deg) scale(0.6);
+	}
+	.sortBtn.open .x{
+		transform: translateY(-50%) rotate(45deg) scale(0.6);
+	}
+	.sortBtn,
+	.sortBtn .detailed li, 
+	.sortBtn .sort_list li,
+	.more-flight-popup .date_list p,
+	.more-flight-popup .date{
+		font-size: 13px;
+	}
+	.email-section p,
+	.more-flight-popup h6, 
+	.more-flight-popup h3,
+	.more-flight-popup .sample_dates{
+		font-size: 14px;
+	}
+	.more-flight-popup{
+		width: 90%;
+	}
+	.unlockBtn{
+		font-size: 13px;
+		max-width: 160px;
+		padding: 10px 15px;
+	}
+	.partners_list .list .partner_logo img{
+		height: auto;
+	}
+	.deal_section .deal_nav h3{
+		font-size: 19px;
+		margin-top: 20px;
+	}
+	.deal-container .gray_title h4{
+		font-size: 16px;
+	}
+	.deal_section .deal_nav .dealBtn{
+		width: 45%;
+		margin: 10px 4px;
+		font-size: 13px;
+		padding: 12px 0;
+	}
+	.deal_section .deal_nav ._rb{
+		width: 200px;
+		top: -35px;
+	}
+	.deal_section .deal_nav .dealBtn:hover,
+	.deal_section .deal_nav .dealBtn.active{
+		padding: 11px 0;
+	}
+	.membership_container .membership_popup{
+		padding: 0 20px;
+	}
+	.membership_container .membership_popup::after{
+		display: none;
+	}
+	.membership_container .offs.free{
+		border-bottom: 1px solid #4e3990;
+	}
+	.membership_container .offers{
+		padding: 0;
+	}
+	.membership_container .offs{
+		padding: 40px 0;
+	}
+	.user-section .login_container label{
+		font-size: 16px;
+	}
+	.user-section .login_container .logo img{
+		width: 70px;
+	}
+	.user-section .login_container h2{
+		font-size: 25px;
+		margin: 10px 0;
+	}
+	.user-section .login_container input{
+		margin-bottom: 20px;
+	}
+	.user-section .login_container .logo{
+		margin: 0;
+	}
+	.partner-section .container >p, 
+	.flight-section .container > p{
+
+	}
+	.flight_list_section .flight_details .details .where_is{
+		margin: 5px auto 0 auto;
+	}
+	.flight_list_section .flight_details ._ex{
+		margin-top: 15px;
+	}
+	.flight_list_section .flight_details .block{
+		width: 50%;
+		margin-bottom: 10px;
+	}
+	.partner-section .partner_box .partner{
+		margin-bottom: 5px;
+	}
+	.flight_list_section .flight_box{
+		padding: 10px;
+	}
+	.flight_list_section .flight_box .flag{
+		margin-right: 5px;
+	}
+	.flight_list_section .final_dest .city,
+	.flight_list_section .flight_box .destination{
+		font-size: 14px;
+		margin-top: 4px;
+	}
+	.bott-slogan{
+		font-size: 20px;
+	}
+	.bott-section h3{
+		font-size: 18px;
+	}
+	.log-section.t .log_box{
+		margin-top: -100px;
+	}
+	.main_bg{
+		min-height: 320px;
+	}
+	.log-section .log_box input,
+	.log-section .log_box button{
+		width: 90%;
+		font-size: 12px;
+	}
+	.log-section .log_box button{
+		margin-top: 10px;
+	}
+	.log-section .log_box .signIn, 
+	.log-section .log_box h2{
+		font-size: 14px;
+	}
+	.log-section .log_box{
+		padding: 20px 25px;
+	}
+	.main_bg .slogan{
+		font-size: 26px;
+	}
+	.travelers-section .t_box .user_comment{
+		width: 100%;
+	}
+	.flight_list_section .flight_details .details p.t-cp{
+		float: left;
+	}
+	.flight_list_section .flight_details .details .date{
+		float: right;
+	}
+	.flight_list_section .flight_details ._ex{
+		align-items: center;
+		flex-direction: column;
+	}
+	.flight_list_section .flight_details .details .departure, 
+	.flight_list_section .flight_details .details .return{
+		padding: 0 15px 0px 40px;
+	}
+	.flight_list_section .flight_details .details .departure .u-i, 
+	.flight_list_section .flight_details .details .return .u-i{
+	    left: 3px;
+    	top: 9px;
+	}
+	.nav_bar{
+		padding:20px 0 30px 0;
+	}
+}
+
+

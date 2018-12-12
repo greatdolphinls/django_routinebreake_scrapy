@@ -1,0 +1,505 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block content %}
+
+	<div class="rb-container">
+		<div class="top-section main_bg">
+			<nav class="nav_bar">
+				<div class="web-container">
+					<div class="logo float-left">
+						<a href="{% url 'home' %}"></a>
+					</div>
+					<a href="{% url 'signin' %}" class="signBtn float-right">Sign in</a>
+				</div>
+				<div class="clearfix"></div>
+			</nav>
+			<div class="container">
+				<h1 class="rBlack text-center slogan t-wht">Break the routine. Not your bank!</h1>
+			</div>
+		</div>
+		<div class="log-section t">
+			<div class="container">
+				<div class="log_box">
+					<h2 class="rMedium">Save hundreds of Euros and join 500+ people traveling to amazing destinations</h2>
+					<form action="{% url 'signup' %}" method="GET">
+						<input type="text" name="" placeholder="Email address">
+						<button type="submit">Get my invitation</button>
+					</form>
+					<p class="signIn">Already using <span class="t-cp">routin breakers?</span><a href="{% url 'signin' %}" class="rRegular">Sign in</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="flight-section">
+			<div class="container">
+				<h2 class="title">The best flight deals appear when you are not searching</h2>
+				<p class="text-center rRegular">We post the best ones in our list every day!</p>
+				<div class="flight_list_section">
+					<div class="list unselectable">
+						<div class="flight_box">
+							<div class="to">
+								<span class="u-i circle float-left"></span>
+								<div class="_flex">
+									<div class="flag">
+										<img src="{% static 'img/flag3.jpg' %}">
+									</div>
+									<p class="destination">
+										<span class="city t-cp">dublin</span>
+										<span class="for">for</span>
+										<span class="price"><span class="curr">€</span>453.00</span>
+									</p>
+								</div>
+							</div>
+							<div class="from">
+								<div class="final_dest flex">
+									<span class="u-i plane-up p"></span>
+									<p class="city t-cp">london</p>
+								</div>
+							</div>
+						</div>
+						<div class="flight_details">
+							<div class="details">
+								<div class="row">
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="departure">
+											<span class="u-i plane-up"></span>
+											<p class="t-cp">departure date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="return">
+											<span class="u-i plane-down"></span>
+											<p class="t-cp">return date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-1 col-md-4 col-sm-12 no-padding">
+										<a href="#!" class="where_is">Where is <span class="city t-cp">amsterdam</span>?</a>
+									</div>
+									<div class="col-lg-4 col-md-12">
+										<div class="flex _ex">
+											<a href="#!" class="block goto_tkt">Go to Tickets</a>
+											<a href="#!" class="block more_dates">More Dates</a>
+											<a href="#!" class="block fb_share">Share</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-12">
+										<div class="place_img">
+											<img src="{% static 'img/place-img.jpg' %}">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list unselectable">
+						<div class="flight_box">
+							<div class="to">
+								<span class="u-i circle float-left"></span>
+								<div class="_flex">
+									<div class="flag">
+										<img src="{% static 'img/flag2.jpg' %}">
+									</div>
+									<p class="destination">
+										<span class="city t-cp">las vegas</span>
+										<span class="for">for</span>
+										<span class="price"><span class="curr">€</span>453.00</span>
+									</p>
+								</div>
+							</div>
+							<div class="from">
+								<div class="final_dest flex">
+									<span class="u-i plane-up p"></span>
+									<p class="city t-cp">dublin</p>
+								</div>
+							</div>
+						</div>
+						<div class="flight_details">
+							<div class="details">
+								<div class="row">
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="departure">
+											<span class="u-i plane-up"></span>
+											<p class="t-cp">departure date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="return">
+											<span class="u-i plane-down"></span>
+											<p class="t-cp">return date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-1 col-md-4 col-sm-12 no-padding">
+										<a href="#!" class="where_is">Where is <span class="city t-cp">amsterdam</span>?</a>
+									</div>
+									<div class="col-lg-4 col-md-12">
+										<div class="flex _ex">
+											<a href="#!" class="block goto_tkt">Go to Tickets</a>
+											<a href="#!" class="block more_dates">More Dates</a>
+											<a href="#!" class="block fb_share">Share</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-12">
+										<div class="place_img">
+											<img src="{% static 'img/place-img.jpg' %}">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list unselectable">
+						<div class="flight_box">
+							<div class="to">
+								<span class="u-i circle float-left"></span>
+								<div class="_flex">
+									<div class="flag">
+										<img src="{% static 'img/flag2.jpg' %}">
+									</div>
+									<p class="destination">
+										<span class="city t-cp">new york</span>
+										<span class="for">for</span>
+										<span class="price"><span class="curr">€</span>453.00</span>
+									</p>
+								</div>
+							</div>
+							<div class="from">
+								<div class="final_dest flex">
+									<span class="u-i plane-up p"></span>
+									<p class="city t-cp">monaco</p>
+								</div>
+							</div>
+						</div>
+						<div class="flight_details">
+							<div class="details">
+								<div class="row">
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="departure">
+											<span class="u-i plane-up"></span>
+											<p class="t-cp">departure date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="return">
+											<span class="u-i plane-down"></span>
+											<p class="t-cp">return date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-1 col-md-4 col-sm-12 no-padding">
+										<a href="#!" class="where_is">Where is <span class="city t-cp">amsterdam</span>?</a>
+									</div>
+									<div class="col-lg-4 col-md-12">
+										<div class="flex _ex">
+											<a href="#!" class="block goto_tkt">Go to Tickets</a>
+											<a href="#!" class="block more_dates">More Dates</a>
+											<a href="#!" class="block fb_share">Share</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-12">
+										<div class="place_img">
+											<img src="{% static 'img/place-img.jpg' %}">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list unselectable">
+						<div class="flight_box">
+							<div class="to">
+								<span class="u-i circle float-left"></span>
+								<div class="_flex">
+									<div class="flag">
+										<img src="{% static 'img/flag1.jpg' %}">
+									</div>
+									<p class="destination">
+										<span class="city t-cp">madrid</span>
+										<span class="for">for</span>
+										<span class="price"><span class="curr">€</span>453.00</span>
+									</p>
+								</div>
+							</div>
+							<div class="from">
+								<div class="final_dest flex">
+									<span class="u-i plane-up p"></span>
+									<p class="city t-cp">berlin</p>
+								</div>
+							</div>
+						</div>
+						<div class="flight_details">
+							<div class="details">
+								<div class="row">
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="departure">
+											<span class="u-i plane-up"></span>
+											<p class="t-cp">departure date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="return">
+											<span class="u-i plane-down"></span>
+											<p class="t-cp">return date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-1 col-md-4 col-sm-12 no-padding">
+										<a href="#!" class="where_is">Where is <span class="city t-cp">amsterdam</span>?</a>
+									</div>
+									<div class="col-lg-4 col-md-12">
+										<div class="flex _ex">
+											<a href="#!" class="block goto_tkt">Go to Tickets</a>
+											<a href="#!" class="block more_dates">More Dates</a>
+											<a href="#!" class="block fb_share">Share</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-12">
+										<div class="place_img">
+											<img src="{% static 'img/place-img.jpg' %}">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="list unselectable">
+						<div class="flight_box">
+							<div class="to">
+								<span class="u-i circle float-left"></span>
+								<div class="_flex">
+									<div class="flag">
+										<img src="{% static 'img/flag3.jpg' %}">
+									</div>
+									<p class="destination">
+										<span class="city t-cp">dublin</span>
+										<span class="for">for</span>
+										<span class="price"><span class="curr">€</span>453.00</span>
+									</p>
+								</div>
+							</div>
+							<div class="from">
+								<div class="final_dest flex">
+									<span class="u-i plane-up p"></span>
+									<p class="city t-cp">madrid</p>
+								</div>
+							</div>
+						</div>
+						<div class="flight_details">
+							<div class="details">
+								<div class="row">
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="departure">
+											<span class="u-i plane-up"></span>
+											<p class="t-cp">departure date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-4 col-sm-6 no-padding">
+										<div class="return">
+											<span class="u-i plane-down"></span>
+											<p class="t-cp">return date</p>
+											<p class="date">
+												<span class="month t-cp">aug</span>
+												<span class="day">15</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-1 col-md-4 col-sm-12 no-padding">
+										<a href="#!" class="where_is">Where is <span class="city t-cp">amsterdam</span>?</a>
+									</div>
+									<div class="col-lg-4 col-md-12">
+										<div class="flex _ex">
+											<a href="#!" class="block goto_tkt">Go to Tickets</a>
+											<a href="#!" class="block more_dates">More Dates</a>
+											<a href="#!" class="block fb_share">Share</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-12">
+										<div class="place_img">
+											<img src="{% static 'img/place-img.jpg' %}">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="text-center rLight">We are tech/travel lovers who spend all day researching super cheap flight deals and creating better ways to find them</p>
+			</div>
+		</div>
+		<div class="partner-section">
+			<div class="container">
+				<h2 class="title">Discover and save even more with our travel partners</h2>
+				<p class="text-center rRegular">Deals from travel insurance to travel clothes for your next trips!</p>
+				<div class="partner_box">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/1.png' %}">
+								<img class="g" src="{% static 'img/partners/1-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/2.png' %}">
+								<img class="g" src="{% static 'img/partners/2-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/3.png' %}">
+								<img class="g" src="{% static 'img/partners/3-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/4.png' %}">
+								<img class="g" src="{% static 'img/partners/4-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/5.png' %}">
+								<img class="g" src="{% static 'img/partners/5-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/6.png' %}">
+								<img class="g" src="{% static 'img/partners/6-g.png' %}">
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="text-center rLight">We add new travel partners every month!</p>
+			</div>
+		</div>
+		<div class="travelers-section">
+			<div class="container">
+				<h2 class="title">500+ travel lovers are saving and traveling already!</h2>
+			</div>
+			<div class="web-container">
+				<div class="row _ex_padding">
+					<div class="col-lg-4 col-md-12">
+						<div class="t_box">
+							<div class="user_comment">
+								<h3>Sarino</h3>
+								<p>"Thank you for launching Routine Breakers!
+								I traveled to Miami for half price and could
+								not believe it! Thank you" <b>Saved: €200+</b> per ticket</p>
+							</div>
+							<div class="t_active _1"></div>
+							<div class="t_none _1"></div>
+							<div class="t_none _2"></div>
+							<div class="t_none _3"></div>
+							<div class="t_none _4"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="t_box active">
+							<div class="user_comment">
+								<h3>Hugo</h3>
+								<p>I went to Cuba with my girlfriend for
+								2 weeks! I could not do it with normal flight prices,
+								but I received your deal and we had the best experience there." <b>Saved: €300+</b> per ticket
+								</p>
+							</div>
+							<div class="t_active _2"></div>
+							<div class="t_none _5"></div>
+							<div class="t_none _6"></div>
+							<div class="t_none _7"></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="t_box">
+							<div class="user_comment last">
+								<h3>Diana</h3>
+								<p>It is awesome to read other travel stories and get inspired to explore more with your deals. Thanks ❤️</p>
+							</div>
+							<div class="t_active _3"></div>
+							<div class="t_none _8"></div>
+							<div class="t_none _9"></div>
+							<div class="t_none _10"></div>
+							<div class="t_none _11"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bott-section">
+			<div class="container">
+				<h2 class="rBlack t-wht bott-slogan">We are on a mission to make travel more affordable</h2>
+				<h3>Save your money is a great start</h3>
+			</div>
+		</div>
+		<div class="log-section b">
+			<div class="container">
+				<div class="log_box">
+					<h2 class="rMedium">Save hundreds of Euros and join 500+ people traveling to amazing destinations</h2>
+					<form action="{% url 'signup' %}" method="GET">
+						<input type="text" name="" placeholder="Email address">
+						<button type="sumit">Get my invitation</button>
+					</form>
+					<p class="signIn">Already using <span class="t-cp">routin breakers?</span><a href="{% url 'signin' %}" class="rRegular">Sign in</a></p>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="web-container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="logo">
+							<a href="{% url 'home' %}"></a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="#!" class="terms">Terms of service and privaciy policy</a>
+					</div>
+					<div class="col-md-4">
+						<p>©2018 Routine Breakers</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+  </div>
+  {% endblock content %}
+  {% block javascript %}
+  <script type="text/javascript">
+		$(function(){
+      flightListDropdown();
+    	travelLoversHover();
+		});
+	</script>
+  {% endblock %}
+

@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block content %}
+	<div class="rb-container">
+		<div class="top-section membership_bg">
+			<nav class="nav_bar c">
+				<div class="web-container">
+					<div class="logo float-left">
+						<a href="#!"></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</nav>
+			<div class="membership_container">
+				<h2 class="title text-left">Choose your membership</h2>
+				<p class="offer_text">It’s time to break the routine. Travel the world. Save hundreds of Euros.<br>
+				Save countless hours and we are here to make it happen. <a href="#!">Go Premium!</a></p>
+				<div class="membership_popup">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="offs free">
+								<div class="ttl">
+									<h4>free</h4>
+									<p>
+										<span class="eur">€</span>
+										<span class="num">0</span>
+										<span class="year">/year</span>
+									</p>
+								</div>
+								<div class="offers text-center">
+									<ul>
+										<li>
+											<p>
+												<b>1 of every 3 flight deals</b>
+											</p>
+										</li>
+										<li><span class="x"></span></li>
+										<li><span class="x"></span></li>
+										<li><span class="x"></span></li>
+										<li><span class="x"></span></li>
+									</ul>
+									<div class="text-center">
+										<a href="#!" class="blBtn">Show me <span>1</span>/<span>3</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="offs premium">
+								<div class="ttl">
+									<h4>premium</h4>
+									<p>
+										<span class="eur">€</span>
+										<span class="num">35</span>
+										<span class="year">/year</span>
+										<sub>€45/year</sub>
+									</p>
+									<sub><b>30-day money-back guarantee</b></sub>
+								</div>
+								<div class="offers">
+									<ul>
+										<li>
+											<span class="v"></span>
+											<p>
+												<b>All the best international flight deals (3x)</b>
+											</p>
+										</li>
+										<li>
+											<span class="v"></span>
+											<p>
+												<b>Select your departure city</b>
+											</p>
+										</li>
+										<li>
+											<span class="v"></span>
+											<p>
+												<b>All benefits from travel partners</b>
+												<span class="block">Incl. insurance discounts for your next trips</span>
+											</p>
+											</li>
+										<li>
+											<span class="v"></span>
+											<p>
+												<b>All Airline Mistake Fares</b>
+												<span class="block">Saving up to €650 per flight ticket</span>
+											</p>
+										</li>
+										<li>
+											<span class="v"></span>
+											<p>
+												<b>No Ads</b>
+											</p>
+										</li>
+									</ul>
+									<div class="text-center">
+										<a href="#!" class="blBtn">Show me ALL</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bullets">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span class="active"></span>
+				</div>
+			</div>
+		</div>
+		<div class="partner-section m_partners">
+			<div class="container">
+				<h3 class="title">Our awesome partners</h3>
+				<p class="text-center rRegular">New travel partners very soon</p>
+				<div class="partner_box">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/1.png' %}">
+								<img class="g" src="{% static 'img/partners/1-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/2.png' %}">
+								<img class="g" src="{% static 'img/partners/2-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/3.png' %}">
+								<img class="g" src="{% static 'img/partners/3-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/4.png' %}">
+								<img class="g" src="{% static 'img/partners/4-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/5.png' %}">
+								<img class="g" src="{% static 'img/partners/5-g.png' %}">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="partner">
+								<img class="c" src="{% static 'img/partners/6.png' %}">
+								<img class="g" src="{% static 'img/partners/6-g.png' %}">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="testimonies-section">
+			<div class="container">
+				<h3 class="title"><sub>You are</sub><br>
+				The center of our universe</h3>
+				<div class="staff_container">
+					<div class="staff">
+						<div class="about">
+							<div class="avatar">
+								<img src="{% static 'img/staff1.jpg' %}">
+							</div>
+							<div class="text">
+								<p>“Thank you @routinebr for an amazing gift I got from you some months ago.
+								Thanks to joining your premium membership I discovered a very good
+								deal in your list and flew from Europe to Colombia where lives my boyfriend!
+								I need more deals like that to see him more often :)”</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="info">
+							<h4 class="name rBold">Angelika Gremska</h4>
+							<h6 class="post rRegular">GIS Specialist</h6>
+							<h6 class="post rRegular">COWI</h6>
+						</div>
+					</div>
+					<div class="staff">
+						<div class="about">
+							<div class="avatar">
+								<img src="{% static 'img/staff2.jpg' %}">
+							</div>
+							<div class="text">
+								<p>“It is incredible, I just saved hundreds of Euros thanks to you!! You are my
+								heros haha!! I will keep checking the website to find other deals and
+								great to have discounts on travel insurance as well!! Keep the hard work!”</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="info">
+							<h4 class="name rBold">Alejandro Faini</h4>
+							<h6 class="post rRegular">Digital Marketing Consultant</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="membership-bott-section">
+			<div class="container">
+				<p class="rMedium text-center">RB has been developed and carefully crafted to fulfill your needs.<br>
+				We know that we would not exist if it weren’t for you and your (soon-to-happen!) travel dreams.
+				<br><span class="rBlack">Your amazing travel adventures are our purpose.</span>
+				</p>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="web-container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="logo">
+							<a href="#!"></a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<a href="#!" class="terms">Terms of service and privaciy policy</a>
+					</div>
+					<div class="col-md-4">
+						<p>©2018 Routine Breakers</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+  </div>
+  {% endblock content %}
+  {% block javascript %}
+  <script type="text/javascript">
+		$(function(){
+		});
+	</script>
+  {% endblock %}

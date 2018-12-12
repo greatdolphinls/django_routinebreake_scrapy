@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block content %}
+<div class="user-section _log">
+  <div class="bg logBg"></div>
+  <div class="left_side">
+    <div class="section">
+      <div class="login_container">
+        <div class="logo _log">
+          <a href="{% url 'home' %}">
+            <img src="{% static 'img/icons/logo-log.png' %}">
+          </a>
+          <h2 class="t-cp">log in</h2>
+        </div>
+        <form action="{% url 'deals' %}" method="GET">
+          <label>Email</label>
+          <input type="email" name="" required>
+          <br>
+          <label>Password</label>
+          <input type="password" name="" required>
+          <br>
+          <button type="submit">log in</button>
+          <a href="{% url 'forgetPassword' %}" class="passForgot">Forgott password?</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

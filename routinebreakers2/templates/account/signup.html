@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block content %}
+	<div class="user-section" id="password-section">
+		<div class="bg passBg"></div>
+		<div class="left_side">
+			<div class="section">
+				<div class="logo">
+					<a href="{% url 'home' %}"></a>
+				</div>
+				<div class="login_container">
+					<h2>Create your password</h2>
+					<form>
+						<label>Password</label>
+						<input type="password" name="">
+						<br>
+						<label>Confirm your password</label>
+						<input type="password" name="">
+						<br>
+						<p class="quote">"Don't call it a dream...cal it a plan"</p>
+						<button type="button" class="nextBtn" data-next="departure-section">next</button>
+					</form>
+					<div class="bullets">
+						<span class="active"></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="user-section" id="departure-section">
+		<div class="bg depBg"></div>
+		<div class="left_side">
+			<div class="section">
+				<div class="logo">
+					<a href="#!"></a>
+				</div>
+				<div class="login_container">
+					<h2>Your departure city</h2>
+					<form>
+						<label>From which city do you travel often?</label>
+						<input name="" class='departure_tags' placeholder="Ex. Berlin, Germany" autofocus
+						data-whitelist='[
+						"berlin",
+						"new york",
+						"tbilisi",
+						"batumi"
+						]'>
+						<br>
+						<p class="quote">“Twenty years from now you will be more disappointed by the things
+						that you didn’t do than by the ones you did do. So throw off the bowlines.
+						Sail away from the safe harbor. Catch the trade winds in your sails.
+						Explore. Dream. Discover.”― Mark Twain</p>
+						<button type="button" class="nextBtn" data-next="destination-section">next</button>
+					</form>
+					<div class="bullets">
+						<span></span>
+						<span class="active"></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="user-section" id="destination-section">
+		<div class="bg destBg"></div>
+		<div class="left_side">
+			<div class="section">
+				<div class="logo">
+					<a href="#!"></a>
+				</div>
+				<div class="login_container">
+					<h2>Your dream destinations</h2>
+					<form>
+						<label>What are your dream countries to visit?</label>
+						<input name="" class='destination_tags' placeholder="Ex. Colombia, Japan, Tanzania, Italy" value="" autofocus data-whitelist='[
+						"germany",
+						"usa",
+						"columbia",
+						"japan"
+						]'>
+						<br>
+						<p class="quote">"Better to see something once than hear about it a thousand times"</p>
+						<a href="{% url 'membership' %}" class="nextBtn">next</a>
+					</form>
+					<div class="bullets">
+						<span></span>
+						<span></span>
+						<span class="active"></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  {% endblock content %}
+  {% block javascript %}
+  <script type="text/javascript">
+		$(function(){
+    		taggable();
+    		userRegister();
+		});
+	</script>
+  {% endblock %}

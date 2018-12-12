@@ -1,0 +1,28 @@
+@font-face{
+	src:url('../fonts/Bradley Hand ITC Std Bold.otf');
+	font-family: 'bradlyHand';
+}
+@font-face{
+	src:url('../fonts/Roboto-Black.ttf');
+	font-family: 'robotoBlack';
+}
+@font-face{
+	src:url('../fonts/Roboto-Bold.ttf');
+	font-family: 'robotoBold';
+}
+@font-face{
+	src:url('../fonts/Roboto-Regular.ttf');
+	font-family: 'robotoRegular';
+}
+@font-face{
+	src:url('../fonts/Roboto-Medium.ttf');
+	font-family: 'robotoMedium';
+}
+@font-face{
+	src:url('../fonts/Roboto-light.ttf');
+	font-family: 'robotoLight';
+}
+@font-face{
+	src:url('../fonts/Roboto-thin.ttf');
+	font-family: 'robotoThin';
+}

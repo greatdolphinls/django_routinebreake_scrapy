@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+{% block content %}
+	<div class="email-section">
+		<div class="message _ex">
+			<h2>Check your email</h2>
+			<p>We’ve sent a message to <b>XXXX@gmail.com</b> with a link to activate your
+			account. If you don’t see an email from us within a few minutes, be sure to
+			check your spam folder. Sometimes things get lost in there.</p>
+			<a href="#!" class="resendBtn">Didn't get an email?</a>
+			<div class="resend">
+				<form>
+					<label>Email</label>
+					<br>
+					<input type="text" name="">
+					<br>
+					<button type="submit" class="mailBtn">Send</button>
+				</form>
+			</div>
+		</div>
+  </div>
+  {% endblock content %}
+  {% block javascript %}
+  <script type="text/javascript">
+		$(function(){
+			resendEmail();
+		});
+	</script>
+  {% endblock %}
